@@ -1,0 +1,87 @@
+import os
+import string
+import random
+import time
+import datetime
+import sys
+import keyboard
+import os.path
+def send():
+    time.sleep(0.5)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("-", end = "\r")
+    time.sleep(0.1)
+    print("|", end = "\r")
+    time.sleep(0.1)
+    print("/", end = "\r")
+    time.sleep(0.1)
+    print("\u001b[38;5;203mAttack ha\u001b[38;5;204ms been se\u001b[38;5;205mnt \u001b[38;5;206msuccessfully.")
+    choices()
+def choices() : 
+    choice = input("\u001b[38;5;205m[\u001b[38;5;254m/\u001b[38;5;203mRo\u001b[38;5;204mse\u001b[38;5;205m]\u001b[38;5;254m$")
+    if choice.startswith(("homehold")):
+        send()
+        choices()                    
+    elif choice=="exit":
+        exit()
+    elif choice.startswith(("HOMEHOLD")):
+        send()
+        choices()  
+    else:
+        print("\u001b[38;5;203m" + choice + " \u001b[38;5;203mIs \u001b[38;5;204mNot A \u001b[38;5;205mValid \u001b[38;5;206mCommand.\u001b[38;5;254m")
+        choices()
+        
+def rose() :
+    os.system("cls")
+    print("")
+    print("                                                     \u001b[38;5;203m╦═╗\u001b[38;5;204m╔═╗\u001b[38;5;205m╔═╗\u001b[38;5;206m╔═╗")
+    print("                                                     \u001b[38;5;203m╠╦╝\u001b[38;5;204m║ ║\u001b[38;5;205m╚═╗\u001b[38;5;206m║╣ ")
+    print("                                                     \u001b[38;5;203m╩╚═\u001b[38;5;204m╚═╝\u001b[38;5;205m╚═╝\u001b[38;5;206m╚═╝")
+    print("                                  \u001b[38;5;203m╔════════════\u001b[38;5;204m═════════════\u001b[38;5;205m══════════════\u001b[38;5;206m═══════╗")
+    print("                                  \u001b[38;5;203m║        \u001b[38;5;204mWelcome \u001b[38;5;204mTo \u001b[38;5;205mThe \u001b[38;5;206mROSE HOME HOLDER       ║")
+    print("                                  \u001b[38;5;203m╚═════════\u001b[38;5;204m═════════════\u001b[38;5;205m══════════════\u001b[38;5;206m══════════╝")
+    print("                                     \u001b[38;5;203m╔═════════\u001b[38;5;204m═════════════\u001b[38;5;205m══════════════\u001b[38;5;206m════╗")
+    print("                                     \u001b[38;5;203m║    \u001b[38;5;204mSYNTAX \u001b[38;5;204mHow To \u001b[38;5;205mPreform \u001b[38;5;206mAn Attack     ║")
+    print("                                     \u001b[38;5;203m║       \u001b[38;5;204mhomehold \u001b[38;5;204m(IP) \u001b[38;5;205m(TIME) \u001b[38;5;206m(PORT)      ║")
+    print("                                     \u001b[38;5;203m╚═════════\u001b[38;5;204m═════════════\u001b[38;5;205m══════════════\u001b[38;5;206m════╝") 
+rose()
+choices()
